@@ -1,0 +1,149 @@
+<!--pages/mainPage/mainPage.wxml-->
+<view class='container'>
+    <view class='containerz'>
+      <view class='container1'>
+        <image src='{{userInfo.avatarUrl}}'></image>
+        <text>{{userInfo.nickName}}</text>
+      </view>
+
+  <view class='containerx'>
+    <view class='container2'>
+        <image src='../../image/mainPage/rili.png'></image>
+        <text class='currentDay'>{{currentDay}}</text>
+    </view>
+
+    <view class='container21'>
+        <text>蛋白质</text>
+        <label>{{protein}}g</label>
+    </view>
+
+    <view class='container3'>
+        <text>碳水化合物</text>
+        <label>{{carbohydrate}}g</label>
+    </view>
+    <view class='container4'>
+        <text>脂肪</text>
+        <label>{{fat}}g</label>
+    </view>
+    <view class='container5'>
+        <text>总热量</text>
+        <label>{{calorie}}kcal</label>
+    </view>
+  </view>
+</view>
+
+  <view class='containery'>
+      <view class='breakfast'>
+
+          <view class='bk1' bindtap="showitem">
+            <image class='imagebk' src='../../image/mainPage/zaocan.png'></image>
+            <text bindtap='loginClick'>早餐</text>
+            <image bindtap='changeToDetail1' class='imagePlus1' src='../../image/mainPage/plus1.png'></image>
+          </view>
+
+
+    <view class='zao' class="{{down?'show':'hide'}}">
+           <view class='bk2'>
+           <image src='{{zaoImg}}'></image> 
+          <text>占比{{zao}}%</text>  
+          </view> 
+          <scroll-view class="bk4x" scroll-x="true" style=" white-space:nowrap;"  > 
+        <block class='bk4xy' wx:for="{{sipuDetail}}" wx:for-index="index">
+            <view class='bk41'>
+            <image class='imageSwip1' src='https://gz-xcx.maoln.com{{sipuDetail[index].recipe.thumbnail}}' data-id="{{inforDetail1[index].recipe.id}}" mode="aspectFill" bindtap='changeToDetail'></image>
+            <view class='bk41Content'>
+            <text class='bk41Text'>{{sipuDetail[index].recipe.title}}</text>
+          <view class='changeT'>
+            <text id='{{sipuDetail[index].id}}' bindtap="minusNum" data-index="{{index}}" class='bk41icon1' data-minusnum="{{inforDetail1[index].recipe.id}}" src='{{detail[index].url1}}' data-count='{{inforDetail1[index].count}}'>-</text>
+            <label>{{sipuDetail[index].count}}</label>
+            <text id='{{detail[index].id}}' bindtap="addNum" data-index="{{index}}" class='bk41icon2' data-addnum="{{inforDetail1[index].recipe.id}}" src='{{detail[index].url2}}'>+</text>
+            </view>
+
+            </view>
+            </view> 
+        
+        </block>
+        </scroll-view>
+       </view> 
+
+       </view>
+
+
+
+ <view class='lunch'>
+
+          <view class='bk1' bindtap="showitem1">
+            <image class='imagebk' src='../../image/mainPage/lunch.png'></image>
+            <text bindtap='loginClick'>午餐</text>
+            <image bindtap='changeToDetail2' class='imagePlus1' src='../../image/mainPage/plus1.png'></image>
+          </view>
+
+
+
+  <view class='zhong' class="{{down1?'show':'hide1'}}">
+           <view class='bk2'>
+           <image src='{{zhongImg}}'></image> 
+          <text>占比{{zhong}}%</text>  
+          </view> 
+          <scroll-view class="bk4x" scroll-x="true" style=" white-space:nowrap;" > 
+        <block class='bk4xy' wx:for="{{sipuDetail2}}" wx:for-index="index">
+            <view class='bk41'>
+            <image class='imageSwip1' src='https://gz-xcx.maoln.com{{sipuDetail2[index].recipe.thumbnail}}' data-id="{{inforDetail2[index].recipe.id}}"  mode="aspectFill" bindtap='changeToDetail'></image>
+            <view class='bk41Content'>
+            <text class='bk41Text'>{{sipuDetail2[index].recipe.title}}</text>
+
+            <view class='changeT'>
+            <text id='{{detail[index].id}}' bindtap="minusNum" data-index="{{index}}" class='bk41icon1' data-minusnum="{{inforDetail2[index].recipe.id}}" src='{{detail[index].url1}}' data-count='{{inforDetail2[index].count}}'>-</text>
+            <label>{{sipuDetail2[index].count}}</label>
+            <text id='{{detail[index].id}}' bindtap="addNum" data-index="{{index}}" class='bk41icon2' data-addnum="{{inforDetail2[index].recipe.id}}" src='{{detail[index].url2}}'>+</text>   
+             </view>      
+            </view>
+            </view> 
+        
+        </block>
+        </scroll-view>
+       </view> 
+  </view>     
+
+
+<view class='dinner'>
+
+          <view class='bk1' style='border-bottom:none;' bindtap="showitem2">
+            <image class='imagebk' src='../../image/mainPage/wancan.png'></image>
+            <text bindtap='loginClick'>晚餐</text>
+            <image bindtap='changeToDetail3' class='imagePlus1' src='../../image/mainPage/plus1.png'></image>
+          </view>
+
+
+  <view class='wan' class="{{down2?'show':'hide2'}}">       
+           <view class='bk2'>
+          <image src='{{wanImg}}'></image>
+          <text>占比{{wan}}%</text>  
+          </view> 
+          <scroll-view class="bk4x hehe" scroll-x="true" style=" white-space:nowrap;"> 
+        <block class='bk4xy' wx:for="{{sipuDetail3}}" wx:for-index="index">
+            <view class='bk41'>
+            <image class='imageSwip1' src='https://gz-xcx.maoln.com{{sipuDetail3[index].recipe.thumbnail}}' data-id="{{inforDetail3[index].recipe.id}}" mode="aspectFill" bindtap='changeToDetail'></image>
+            <view class='bk41Content'>
+            <text class='bk41Text'>{{sipuDetail3[index].recipe.title}}</text>
+
+            <!-- <image id='{{detail[index].id}}' bindtap="minusNum" data-index="{{index}}" class='bk41icon1' data-minusnum="{{inforDetail3[index].recipe.id}}" src='{{detail[index].url1}}' data-count='{{inforDetail3[index].count}}'></image>    -->
+            <view class='changeT'>
+            <text id='{{detail[index].id}}' bindtap="minusNum" data-index="{{index}}" class='bk41icon1' data-minusnum="{{inforDetail3[index].recipe.id}}" src='{{detail[index].url1}}' data-count='{{inforDetail3[index].count}}'>-</text>           
+            <label>{{sipuDetail3[index].count}}</label>
+
+            <!-- <image id='{{detail[index].id}}' bindtap="addNum" data-index="{{index}}" class='bk41icon2' data-addnum="{{inforDetail3[index].recipe.id}}" src='{{detail[index].url2}}'></image> -->
+            <text id='{{detail[index].id}}' bindtap="addNum" data-index="{{index}}" class='bk41icon2' data-addnum="{{inforDetail3[index].recipe.id}}" src='{{detail[index].url2}}'>+</text>
+             </view>
+            </view>
+            </view> 
+        
+        </block>
+        </scroll-view>
+       </view> 
+</view> 
+
+
+    
+  </view>
+</view>

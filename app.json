@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/shouye/shouye",
+    "pages/mainPage/mainPage",
+    
+    
+    "pages/weight/weight",
+    "pages/weightRecording/weightRecording",
+    "pages/confirm/confirm",
+    "pages/delete/delete",
+    "pages/stepFifth/stepFifth",
+    "pages/myPersonal/myPersonal",
+    "pages/stepFourth/stepFourth",
+    "pages/stepThird/stepThird",
+    "pages/jumpDetail/jumpDetail",
+    "pages/foodDetail/foodDetail",
+    
+    "pages/index/index",
+    "pages/userCenter/userCenter",
+    "pages/testResult/testResult",
+    "pages/stepSecond/stepSecond",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "固植健康",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+      "selectedColor": "#8ed21e",
+      "list": [
+        {
+          "pagePath": "pages/mainPage/mainPage",
+          "iconPath": "image/mainPage/food3.png",
+          "selectedIconPath": "image/mainPage/food1.png",
+          "text": "饮食"
+        },
+        {
+          "pagePath": "pages/weight/weight",
+          "iconPath": "image/mainPage/weight1.png",
+          "selectedIconPath": "image/mainPage/weight3.png",
+          "selectedIconColor": "#8ed21e",
+          "text": "体重"
+        },
+        {
+          "pagePath": "pages/userCenter/userCenter",
+          "iconPath": "image/mainPage/mine2.png",
+          "selectedIconPath": "image/mainPage/mine3.png",
+          "text": "我的"
+        }
+      ]
+    }
+}

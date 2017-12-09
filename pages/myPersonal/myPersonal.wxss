@@ -1,0 +1,236 @@
+/* pages/myPersonal/myPersonal.wxss */
+.container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: -100rpx;
+}
+
+.containerx{
+  display: block;
+  width: 91%;
+  border: 1px solid #99d634;
+  margin-left: 4.5%;
+  border-radius: 25px;
+  position: relative;
+}
+.container1 image{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  /* background-color: #99d634; */
+  border-radius: 50%;
+  left: 40%;
+  top: -57.5rpx;
+  position: absolute;
+}
+.container2{
+  margin-top: 100rpx;
+  border-top: 1px dashed #c5c5c5;
+  border-bottom: 1px dashed #c5c5c5;
+}
+.container2,.container3,.container4,.container5,.container6,.container7,.container8,.container9,.containera,.containerb,.containerc,.containerd,.containere,.containerf,.containerg,.containerh,.containeri,.containerj,.containerk,.containerl,.containerm{
+  display: block;
+  position: relative;
+  width: 95%;
+  height: 170rpx;
+  margin-left: 2.5%;
+}
+.container8{
+  display: block;
+  height: 478rpx;
+  border-bottom: 1px dashed #efefef;
+padding-left: 10rpx;
+}
+.container9,.containerc,.containerd,.containere,.containerf,.containerg,.containeri,.containerl,.containerm{
+  height: 250rpx;
+  border-bottom: 1px dashed #c5c5c5;
+}
+.containerh{
+  height: 340rpx;
+  border-bottom: 1px dashed #c5c5c5;
+}
+.containerk{
+  height: 300rpx;
+  border-bottom: 1px dashed #c5c5c5;
+}
+.container8 .container8img01{
+  display: inline-block;
+  width: 220rpx;
+  height: 220rpx;
+  position: absolute;
+  top: 180rpx;
+  left: 280rpx;
+}
+.container8img02{
+  display: inline-block;
+  width: 220rpx;
+  height: 220rpx;
+  position: absolute;
+  top: 180rpx;
+  left: 20rpx;
+   background-color: #c5c5c5; 
+}
+.container3 text,.container4 text,.container5 text,.container6 text,.container7 text,.container8 text,.containera text,.containerb text,.containerj text{
+  font-size: 36rpx;
+  color: #343434;
+}
+.container2 input,.container3 input,.container4 input,.container5 input,.container6 input,.container7 input,.container8 input{
+   margin-top: 10%; 
+  font-size: 36rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+  border: 1px solid #efefef;
+  display: inline-block;
+  padding-left: 10rpx;
+  width: 98%;
+  height: 80rpx;
+}
+
+/* 新增的样式的列表 */
+.container3 radio-group,.containera radio-group,.containerb radio-group,.container3 radio-group,.containerh radio-group,.containerj radio-group{
+  display: inline-block;
+  width: 98%;
+  height: 160rpx;
+  border: 1px solid #efefef;
+  padding-left: 10rpx;
+  margin-top: 10%;
+}
+.containerh radio-group{
+  height: 240rpx;
+}
+.container3,.containera,.containerb,.containerj{
+  height: 250rpx;
+  border-bottom: 1px dashed #c5c5c5;
+}
+.container4{
+  border-bottom: 1px dashed #c5c5c5;
+}
+.container5{
+  border-bottom: 1px dashed #c5c5c5;
+}
+
+.container3 radio,.containera radio,.containerb radio,.containerh radio,.containerj radio{
+  /* margin-top: 10%;   */
+  font-size: 36rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+  /* border-bottom: 1px solid greenyellow; */
+  display: inline-block;
+  width: 100%;
+  height: 80rpx;
+  /* margin-left: 20rpx; */
+}
+.radio1{
+  border-bottom: 1px solid #efefef;
+  padding-left: 10rpx;
+}
+.radio2{
+  height: 70rpx;
+}
+.container2 text,.container3 text,.container4 text,.container5 text,.container6 text,.container7 text,.containera text,.containerb text,.containerd text,.containere text,.containerf text,.containerg text,.containerh text,.containeri text,.containerj text,.containerk text,.containerl text,.containerm text{
+  position: absolute;
+  color: red;
+  font-size: 34rpx;
+  top: 20rpx;
+  left: 0;
+}
+.containerk text{
+  position: relative;
+}
+.container2 label,.container3 label,.container4 label,.container5 label,.container6 label,.container7 label,.containera label,.containerb label,.containerd label,.containere label,.containerf label,.containerh label,.containerj label,.containerk label,.containerm label{
+  color: #666;
+  font-size: 34rpx;
+  position: absolute;
+  left: 100rpx;
+  top: 20rpx;
+}
+.container9 label,.containerc label,.containerg label,.containeri label,.containerl label{
+    color: #666;
+  font-size: 34rpx;
+  position: absolute;
+  top: 20rpx;
+}
+.container3 input{
+   /* margin-top: 0rpx;  */
+   
+}
+.container3 .container3Input{
+   margin-top: -10rpx; 
+     /* margin-top: 10%;   */
+  font-size: 36rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+   border: none; 
+  display: inline-block;
+  width: 98%;
+  height: 80rpx;
+  padding-left:10rpx;
+}
+.container9 textarea,.containerc textarea,.containerd textarea,.containere textarea,.containerf textarea,.containerg textarea,.containeri textarea,.containerk textarea,.containerl textarea{
+   margin-top: 10%; 
+  font-size: 36rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+  border: 1px solid #efefef;
+  display: inline-block;
+  padding-left: 10rpx;
+  width: 98%;
+  height: 150rpx;
+}
+.containerm textarea{
+     margin-top: 10%; 
+  font-size: 36rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+  border: 1px solid #efefef;
+  display: inline-block;
+  padding-left: 10rpx;
+  width: 98%;
+  height: 60rpx;
+}
+
+
+
+
+/* 提交 */
+.container10{
+  display: block;
+  width: 630rpx;
+  height: 100rpx;
+  border-radius: 25px;
+  background-color: #99d634;
+  text-align: center;
+  line-height: 100rpx;
+  /* justify-content: center; */
+ margin: 0 auto;
+ margin-top: 20rpx;
+ margin-bottom: 93rpx;
+  /* margin-left: 27rpx; */
+  
+  /* left: 5%; */
+  /* bottom: 96rpx; */
+  /* position: absolute; */
+}
+.container10 text{
+  font-size: 40rpx;
+  color: #fff;
+  font-family: "Microsoft YaHei UI";
+  display: block
+}
+
+.containera .container3Input{
+  padding-left: 10rpx;
+}
+.containerb .container3Input{
+  padding-left: 10rpx;
+}
+.containerh .radio2{
+  padding-left: 10rpx;
+}
+.containerj .container3Input{
+  padding-left: 10rpx;
+}
+.container8 text{
+  color: #666;
+}

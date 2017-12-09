@@ -1,0 +1,11 @@
+<!--pages/stepSecond/stepSecond.wxml-->
+<view class='container'>
+    <view class='container1'>
+      <text>你的平均每日运动量？</text>
+      <label>5000步</label>
+    </view>
+
+    <view class='xfooter'>
+      <text bindtap='nextStep'>下一步</text>
+    </view>
+</view>

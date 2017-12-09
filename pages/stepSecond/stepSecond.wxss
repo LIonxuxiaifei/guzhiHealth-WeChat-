@@ -1,0 +1,46 @@
+/* pages/stepSecond/stepSecond.wxss */
+.container{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 平均每日运动量 */
+.container1 text{
+  display: block;
+  width: 80%;
+  height: 100rpx;
+  float: left;
+  margin-left: 10%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  color: #343434;
+}
+.container1 label{
+  display: block;
+  width: 80%;
+  height: 100rpx;
+  float: left;
+  margin-left: 10%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 46rpx;
+  color: #595959;
+}
+
+/* 下一步 */
+.xfooter text{
+  display: block;
+  width: 80%;
+  height: 120rpx;
+  background-color: #99d634;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 120rpx;
+  color: #fff;
+  border-radius: 30px;
+}

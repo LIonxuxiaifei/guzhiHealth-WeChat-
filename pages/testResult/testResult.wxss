@@ -1,0 +1,202 @@
+/* pages/testResult/testResult.wxss */
+.container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: -100rpx;
+}
+.xcontainer{
+  display: block;
+  width: 91%;
+  margin-left: 4.5%;
+  border: 1px solid #99d634;
+  border-radius: 21px 21px 20px 20px;
+}
+/* 当前体重 */
+.container1{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 340rpx;
+  background-color: #74d573;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+  line-height: 340rpx;
+  margin-bottom: 100rpx;
+}
+.container1 text{
+  position: absolute;
+  top:0rpx;
+  display: block;
+  width: 100%;
+  height: 193rpx;
+  float: left;
+  font-size: 80rpx;
+  color: #fff;
+}
+.containerx1{
+  display: block;
+  width: 90%;
+  height: 115rpx;
+  margin-left: 5%;
+  border-bottom: 1px solid #dedede;
+  line-height: 115rpx;
+   margin-top: -120rpx; 
+}
+.containerx1 text,.containerx2 text,.containerx3 text,.containerx4 text{
+  float: left;
+  font-size: 34rpx;
+  color: #343434;
+}
+.containerx1 label{
+  float: right;
+  font-size: 40rpx;
+  color: #99d634;
+  margin-right: 63rpx;
+}
+.containerx2,.containerx3,.containerx4{
+  display: block;
+  width: 90%;
+  height: 115rpx;
+  margin-left: 5%;
+  border-bottom: 1px solid #dedede;
+  line-height: 115rpx;
+}
+.containerx4{
+  border-bottom: 0;
+}
+.containerx2 image,.containerx3 image{
+  display: inline-block;
+  width: 63rpx;
+  height: 33rpx;
+  float: right;
+  margin-top: 20rpx;
+}
+.containerx2 label,.containerx3 label,.containerx4 label{
+  float: right;
+  font-size: 40rpx;
+  color: #99d634;
+}
+.containerx4 label{
+  margin-right: 63rpx;
+}
+.containerx3 image{
+  display: inline-block;
+  width: 63rpx;
+  height: 33rpx;
+  margin-top: 20rpx;
+}
+/* 目标体重 */
+.ycontainer{
+  display: block;
+  width: 91%;
+  margin-left: 4.5%;
+  border: 1px solid #99d634;
+  border-radius: 21px 21px 20px 20px;
+  margin-top: 33rpx;
+}
+.container2{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 193rpx;
+  background-color: #74d573;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+}
+.container2 text{
+  display: inline-block;
+  font-size: 34rpx;
+  width: 100%;
+  height: 50rpx;
+  color: #fff;
+  line-height: 50rpx;
+  margin-top: 50rpx;
+}
+.container2 label{
+  display: inline-block;
+  width: 100%;
+  height: 50rpx;
+  color: #fff;
+  font-size: 58rpx;
+}
+.containery1,.containery2,.containery3{
+  display: block;
+  width: 100%;
+  height: 115rpx;
+  line-height: 115rpx;
+  border-bottom: 1px solid #dedede;
+}
+.containery4{
+  display: block;
+  width: 100%;
+  height: 115rpx;
+  line-height: 115rpx;
+  /* border-bottom: 1px solid #dedede; */
+}
+.containery1 text,.containery2 text,.containery3 text,.containery4 text{
+  float: left;
+  margin-left: 30rpx;
+  font-size: 34rpx;
+  color: #343434;
+}
+.containery1 label,.containery2 label,.containery3 label,.containery4 label{
+  float: right;
+  margin-right: 33rpx;
+  font-size: 40rpx;
+  color: #99d634;
+}
+
+/* 重新检测 */
+.x-footer text{
+  display: block;
+  width: 84%;
+  height: 100rpx;
+  border: 1px solid #91dc66;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  color: #91dc66;
+  margin-left: 8%;
+}
+/* 建议定制食谱 */
+.container3{
+  display: block;
+  width: 100%;
+  height: 100rpx;
+  /* background-color: deepskyblue; */
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+/* 进入首页 */
+.x-footer label{
+  display: block;
+  width: 84%;
+  height: 100rpx;
+  background-color: #a7de4c;
+  bottom: 55rpx;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  font-size: 40rpx;
+  margin-left: 8%;
+  margin-top: 31rpx;
+}
+
+
+.containera image{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  /* background-color: #99d634; */
+  border-radius: 50%;
+  left: 40%;
+  top: 30rpx;
+  position: absolute;
+  z-index: 1000;
+}

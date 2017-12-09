@@ -1,0 +1,152 @@
+<!--pages/myPersonal/myPersonal.wxml-->
+<view class='container'>
+  <view class='containerx'>
+
+  <view class='container1'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+
+   <!-- <form bindsubmit='goSubmit'>  -->
+  
+  <view class='container2' >
+    <text>[必选]</text>
+    <label>1.您的姓名或昵称?</label>
+    <input  bindinput="name1"></input>
+  </view>
+  <view class='container3'>
+    <text>[必选]</text>
+    <label>2.您的性别?</label>
+    <radio-group >
+      <radio class='radio1' bindtap='name2' data-name='男'>男</radio>
+      <radio class='container3Input' bindtap='name3' data-name='女'>女</radio>
+    </radio-group>
+  </view>
+  <view class='container4'>
+     <text>[必选]</text>
+     <label>3.您的年龄</label> 
+    <input bindinput='name4'></input>
+  </view>
+  <view class='container5'>
+     <text>[必选]</text>
+     <label>4.您的身高(cm)?</label> 
+    <input bindinput='name5'></input>
+  </view>
+  <view class='container6'>
+     <text>[必选]</text> 
+     <label>5.您的体重(公斤)</label>
+    <input bindinput='name6'></input>
+  </view>
+  <view class='container7'>
+     <text>[必选]</text>
+     <label>6.民族?</label> 
+    <input bindinput='name7'></input>
+  </view>
+  <view class='containera'>
+    <text>[必选]</text>
+    <label>7.婚姻状况?</label>
+    <radio-group>
+      <radio class='radio1' bindtap='name8' data-name='已婚'>已婚</radio>
+      <radio class='container3Input' bindtap='name9' data-name='未婚'>未婚</radio>
+    </radio-group>
+  </view>
+    <view class='containerb'>
+    <text>[必选]</text>
+    <label>8.是否有家族病史?</label>
+    <radio-group>
+      <radio class='radio1' bindtap='name10' data-name='有'>有</radio>
+      <radio class='container3Input' bindtap='name11' data-name='没有'>没有</radio>
+    </radio-group>
+  </view>
+    <view class='container9'>
+     <!-- <text>[必选]</text> -->
+     <label>9.家族病史说明:</label> 
+    <textarea bindinput='name12'></textarea>
+  </view>
+  <view class='container3'>
+    <text>[必选]</text>
+    <label>10.目前是否有慢性病? 请说明</label>
+    <radio-group>
+      <radio class='radio1' bindtap='name13' data-name='是'>是</radio>
+      <radio class='container3Input' bindtap='name14' data-name='否'>否</radio>
+    </radio-group>
+  </view>
+   <view class='containerc'>
+     <!-- <text>[必选]</text> -->
+     <label>11.慢性病情说明:</label> 
+    <textarea bindinput='name15'></textarea>
+  </view>
+    <view class='containerd'>
+      <text>[必选]</text> 
+     <label>12.您对哪些食物过敏?</label> 
+    <textarea bindinput='name16'></textarea>
+  </view>
+  <view class='containere'>
+    <text>[必选]</text> 
+     <label>13.您喜欢的食物?</label> 
+    <textarea bindinput='name17'></textarea>
+  </view>
+  <view class='containerf'>
+    <text>[必选]</text> 
+    <label>14.您不喜欢吃的食物?</label> 
+    <textarea bindinput='name18' ></textarea>
+  </view>
+    <view class='containerg'>
+    <!-- <text>[必选]</text>  -->
+    <label>15.您是否服用保健品？如果有,是什么？</label> 
+    <textarea bindinput='name19'></textarea>
+  </view>
+     <view class='containerh'>
+    <text>[必选]</text>
+    <label>16.您的工作性质?</label>
+    <radio-group>
+      <radio class='radio1' bindtap='name20' data-name='脑力工作'>脑力工作</radio>
+      <radio class='radio1' bindtap='name21' data-name='轻体力工作'>轻体力工作</radio>
+       <radio class='radio2' bindtap='name22' data-name='重体力工作'>重体力工作</radio> 
+    </radio-group>
+  </view> 
+  <view class='containeri'>
+    <!-- <text>[必选]</text>  -->
+    <label>17.如果上述没有,您可以填入您的工作说明:</label> 
+    <textarea bindinput='name23'></textarea>
+  </view>
+  <view class='containerj'>
+    <text>[必选]</text>
+    <label>18.您是否喜欢运动?</label>
+    <radio-group>
+      <radio class='radio1' bindtap='name24' data-name='喜欢'>喜欢</radio>
+      <radio class='container3Input' bindtap='name25' data-name='不喜欢'>不喜欢</radio>
+    </radio-group>
+  </view>
+    <view class='containerk'>
+     <text>[必选]</text>  
+    <label>19.喜欢的运动说明: 什么项目? 有无规律? 或每日、每周多长时间?</label> 
+    <textarea bindinput='name26'></textarea>
+  </view>
+
+
+  <view class='container8'>
+     <text>20.上传一个月内的医院体检报告或者血常规检查报告</text> 
+    <!-- <input placeholder='上传体检报告 (可选填)'></input> -->
+    <image bindtap='uploadImage' class='container8img01' src='../../image/personalCenter/cube.png'></image>
+    <image class='container8img02' src='https://gz-xcx.maoln.com{{tempFilePath0}}' ></image>
+  </view>
+
+  <view class='containerl'>
+    <!-- <text>[必选]</text>   -->
+    <label>21.您想要达到的目的:</label> 
+    <textarea bindinput='name27'></textarea>
+  </view>
+
+    <view class='containerm'>
+     <text>[必选]</text>   
+    <label>22.您的邮箱地址:</label> 
+    <textarea bindinput='name28'></textarea>
+  </view>
+
+  <view class='container10'>
+    <text bindtap='submit'>提交</text>
+  </view>
+
+     <!-- </form>  -->
+  </view>
+</view>

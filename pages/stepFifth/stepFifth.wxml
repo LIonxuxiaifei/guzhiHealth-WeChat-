@@ -1,0 +1,34 @@
+<!--pages/stepFifth/stepFifth.wxml-->
+<view class='container'>
+    <view class='container1'>
+        <text>您的身体指数为</text>
+    </view>
+
+    <view class='container2'>
+        <text>BMI指数</text>
+        <image src='{{canshu}}'></image>
+        <label>{{bmi}}</label>
+    </view>
+
+    <view class='container3'>
+        <text>体脂率</text>
+        <image src='{{zhishu}}'></image>
+        <label>{{bfr}}%</label>  
+    </view>
+
+    <view class='container4'>
+        <text>理想体重</text>
+        <label>{{ideal_weight}}kg</label>
+    </view>
+    
+    <view class='container5'>
+        <text>设定您的目标体重</text> 
+        <picker bindchange='bindWeightchange' value='{{weight_index}}' range='{{array}}'>
+        <label>{{array[weight_index]}}{{weight1}}{{hehe}}</label>
+        </picker>
+    </view>
+
+    <view class='x-footer'>
+        <text bindtap='nextStep'>下一步</text>
+    </view>
+</view>

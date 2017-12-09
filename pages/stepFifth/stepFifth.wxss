@@ -1,0 +1,140 @@
+/* pages/stepFifth/stepFifth.wxss */
+.container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: -150rpx;
+}
+
+/* 身体指数 */
+.container1{
+  display: block;
+  width: 84%;
+  height: 115rpx;
+  text-align: center;
+  line-height: 115rpx;
+  border-bottom: 1px solid #dedede;
+  margin-left: 8%;
+  font-size: 34rpx;
+  color: #343434;
+}
+/* bmi指数 */
+.container2{
+  display: block;
+  width: 84%;
+  height: 115rpx;
+  text-align: center;
+  line-height: 115rpx;
+  border-bottom: 1px solid #dedede;
+  margin-left: 8%;
+  font-size: 34rpx;
+  color: #343434;
+}
+.container2 text{
+  float: left;
+  font-size: 34rpx;
+  color: #343434;
+}
+.container2 label{
+  float: right;
+  font-size: 40rpx;
+  color: #99d634;
+}
+.container2 image{
+  float: right;
+  display: inline-block;
+  width: 63rpx;
+  height: 33rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+/* 体脂率 */
+.container3{
+  display: block;
+  width: 84%;
+  height: 115rpx;
+  text-align: center;
+  line-height: 115rpx;
+  border-bottom: 1px solid #dedede;
+  margin-left: 8%;
+  font-size: 34rpx;
+  color: #343434;  
+}
+.container3 text{
+  float: left;
+  font-size: 34rpx;
+  color: #343434; 
+}
+.container3 label{
+  float: right;
+  font-size: 40rpx;
+  color: #99d634;
+}
+.container3 image{
+  float: right;
+  display: inline-block;
+  width: 63rpx;
+  height: 33rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+
+/* 理想体重 */
+.container4{
+  display: block;
+  width: 84%;
+  height: 115rpx;
+  text-align: center;
+  line-height: 115rpx;
+  border-bottom: 1px solid #dedede;
+  margin-left: 8%;
+  font-size: 34rpx;
+  color: #343434
+}
+.container4 text{
+  float: left;
+  font-size: 34rpx;
+  color: #343434;
+}
+.container4 label{
+  float: right;
+  font-size: 40rpx;
+  color: #99d634;
+  margin-right: 63rpx;
+}
+
+/* 设定您的目标体重 */
+.container5{
+  display: block;
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+  margin-top: 100rpx;
+}
+.container5 text{
+  display: block;
+  width: 100%;
+  height: 100rpx;
+  font-size: 34rpx;
+  color: #343434;
+}
+.container5 label{
+  font-size: 46rpx;
+  color: #595959;
+}
+
+/* 下一步 */
+.x-footer text{
+  display: block;
+  width: 84%;
+  height: 100rpx;
+  background-color: #99d634;
+  position: absolute;
+  bottom: 14.4%;
+  left: 8%;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 40rpx;
+}

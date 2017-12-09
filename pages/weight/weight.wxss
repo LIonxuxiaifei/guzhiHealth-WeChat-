@@ -1,0 +1,131 @@
+/* pages/weight/weight.wxss */
+.container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: -200rpx;
+}
+.containerx{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 584rpx;
+   background-color: #8bda68; 
+}
+.container1{
+  float: left;
+  margin-top: 80rpx;
+  display: block;
+  width: 100%;
+  height: 150rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.container1 text{
+  font-size: 38rpx;
+  color: #fff;
+}
+.container2{
+  float: left;
+  display: block;
+  width: 100%;
+  height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+  /* background-color: deepskyblue; */
+}
+.container2 text{
+  font-size: 150rpx;
+  color: #fff;
+  margin-left: 80rpx;
+}
+.container2 label{
+  font-size: 32rpx;
+  color: #fff;
+}
+.container3{
+  float: left;
+  display: block;
+  width: 100%;
+  height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+  /* background-color: yellow; */
+}
+.container3 text{
+  display: block;
+  width: 30%;
+  height: 80rpx;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  margin-left: 35%;
+  margin-top: 5%;
+  border-radius: 25px;
+  font-size: 34rpx;
+  color: #50934d;
+}
+.containery{
+  display: block;
+  width: 89%;
+  height: 295rpx;
+  border: 1px solid #96dd63;
+  margin-left: 5.5%;
+  margin-top: 20rpx;
+  border-radius: 15px;
+}
+.container4{
+  display: block;
+  width: 100%;
+  height: 145rpx;
+  text-align: center;
+  line-height: 145rpx;
+}
+.container5{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 140rpx;
+  text-align: center;
+  line-height: 140rpx;
+  /* background-color: deepskyblue; */
+}
+.container4 .containerText01{
+  float: left;
+  margin-left: 32rpx;
+  font-size: 38rpx;
+  color: #666666;
+}
+.container4Content{
+  float: right;
+  margin-right: 38rpx;
+}
+.container4Content .containerText02{
+  font-size: 80rpx;
+  color: #666666;
+}
+.container4Content label{
+  font-size: 32rpx;
+  color: #666666;
+}
+
+
+.container5 .containerText03{
+  float: left;
+  margin-left: 32rpx;
+  font-size: 38rpx;
+  color: #666666;
+}
+.container5Content{
+  right: 38rpx;
+  position: absolute;
+}
+.container5Content .containerText04{
+  font-size: 80rpx;
+  color: #666666;
+}
+.container5Content label{
+  font-size: 32rpx;
+  color: #666666;
+}
+

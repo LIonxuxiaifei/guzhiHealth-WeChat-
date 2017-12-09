@@ -1,0 +1,27 @@
+<!--pages/shouye/shouye.wxml-->
+<view class='container'>
+    <text class='yourGender'>您的性别？</text>
+
+    <view class='xGender'>
+      <!-- <text bindtap="changeColor" style="background-color:{{pageBackgroundColor}}">男</text> -->
+      <text bindtap="changeColor" style="{{style}}">男</text>
+      <label bindtap="changeColor1" style="{{style1}}">女</label>
+    </view>
+
+    <view class='xBirthDate'>
+      <text>您的出生日期？</text>
+      
+    <!-- <view class="picker"> -->
+      <!-- 当前选择: {{date}} -->
+    <!-- </view> -->
+  
+  <picker mode="date" value="{{date}}" start="2015年09月01" end="2017年09月01" bindchange="bindDateChange">
+      <label>{{date}}</label>
+  </picker>
+    </view>
+
+    <view class='nextStep'>
+      <text bindtap='nextStep'>下一步</text>
+    </view>
+
+</view>

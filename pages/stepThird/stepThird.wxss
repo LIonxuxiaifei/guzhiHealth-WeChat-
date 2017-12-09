@@ -1,0 +1,99 @@
+/* pages/stepThird/stepThird.wxss */
+ .container{
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: -125rpx;
+ }  
+
+/* 您平时的劳动强度 */
+.container1 text{
+  display: block;
+  width: 80%;
+  height: 100rpx;
+  float: left;
+  margin-left: 10%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  color: #343434;
+}
+.container2{
+  display: block;
+  width: 100%;
+  height: 125rpx;
+  float: left;
+  text-align: center;
+   color: #343434; 
+   /* background-color: #addf89;  */
+  line-height: 50rpx;
+}
+.container2 text{
+  display: block;
+  /* color: #fff; */
+  color: #595959;
+  margin-top: 20rpx;
+  font-size: 46rpx;
+}
+.container2 label{
+  font-size: 24rpx;
+  /* color: #fff; */
+  color: #999;
+}
+
+.container3{
+  display: block;
+  width: 100%;
+  height: 125rpx;
+  float: left;
+  text-align: center;
+  color: #343434;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+}
+.container3 text{
+  display: block;
+  margin-top: 20rpx;
+  font-size: 46rpx;
+  color: #595959;
+}
+.container3 label{
+  font-size: 24rpx;
+  color: #999;
+}
+
+.container4{
+  margin-top: 20rpx;
+  display: block;
+  width: 100%;
+  height: 125rpx;
+  float: left;
+  text-align: center;
+  line-height: 50rpx;
+}
+.container4 text{
+  display: block;
+  margin-top: 20rpx;
+  font-size: 46rpx;
+  color: #595959;
+}
+.container4 label{
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 下一步 */
+.x-footer text{
+  display: block;
+  width: 84%;
+  height: 100rpx;
+  background-color: #99d634;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  position: absolute;
+  bottom: 14.4%;
+  left: 8%;
+  font-size: 40rpx;
+}

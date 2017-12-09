@@ -1,0 +1,95 @@
+<!--pages/foodDetail/foodDetail.wxml-->
+<!-- <import src="../../../wxParse/wxParse.wxml" /> -->
+ <import src="../../wxParser/wxParse.wxml"/>
+<view class='container'>
+  <view class='container1'>
+    <image src='https://gz-xcx.maoln.com{{foodInfor.thumbnail}}'></image>
+  </view>
+  <view class='container2'>
+    <view class='containerY'>
+      <!-- <image src='../../image/mainPage/STAR.png'></image> -->
+      <image class='image1' src='{{image1}}'></image>
+      <image class='image2' src='{{image2}}'></image>
+      <image class='image3' src='{{image3}}'></image>
+    </view>
+      <text>{{foodInfor.title}}</text>
+     <view class='containerx' bindtap='addFood'>
+      <image src='../../image/foodDetail/add.png'></image>
+      <label>加入</label>
+     </view>
+  </view>
+  <view class='container3'>
+    <!-- <text>炎炎夏日，厨房绝对不是一个适合久待的地方，这个时候，一道可口的甜品就是最受欢迎了。</text> -->
+    <text>{{foodInfor.description}}</text>
+  </view>
+  <!-- 三大营养素及热量 -->
+  <view class='container4'>
+    <text class='container4X'></text>
+    <text class='container4Y'>三大营养素及热量</text>
+    <!-- <label>(每100克)</label> -->
+    <label>({{foodInfor.calorie}}克)</label>
+  </view>
+  <view class='container5'>
+    <text>脂肪</text>
+    <label>{{foodInfor.fat}}克</label>
+  </view>
+  <view class='container6'>
+    <text>蛋白质</text>
+    <label>{{foodInfor.protein}}克</label>
+  </view>
+  <view class='container7'>
+    <text>碳水化合物</text>
+    <label>{{foodInfor.carbohydrate}}克</label>
+  </view>
+  <view class='container8'>
+    <text>总热量</text>
+    <label>{{foodInfor.calorie}}千卡</label>
+  </view>
+  <!-- 食材详情 -->
+  <view class='container9'>
+    <text class='containerX'></text>
+    <text class='containerY'>食材详情</text>
+  </view>
+
+  <!-- <view class='container10'>
+    <text>芒果</text>
+    <label>300克</label>
+  </view> -->
+
+  <view class='container10' wx:for="{{materials}}">
+    <text>{{materials[index][0]}}</text>
+    <label>{{materials[index][1]}}</label>
+  </view>
+
+  <!-- <view class='container11'>
+    <text>红豆</text>
+    <label>100克</label>
+  </view>
+  <view class='container12'>
+    <text>牛奶</text>
+    <label>500毫升</label>
+  </view>
+  <view class='container13'>
+    <text>糖</text>
+    <label>20克</label>
+  </view> -->
+  <!-- 烹饪步骤 -->
+  <view class='container14'>
+    <text class='containerX'></text>
+    <text class='containerY'>烹饪步骤</text>
+  </view>
+  <!-- <view class='container15'>
+    <text>第一步</text>
+  </view> -->
+  <!--  <view class='container16'> 
+    <image src='../../image/mainPage/foodDetail.png'></image> -->
+    <!-- <text>{{wxParseData:article.nodes}}</text> -->
+   
+  <!--这里data中article为bindName-->
+   <!-- <view>
+        <text >{{stepDetail}}</text>  
+  </view>  -->
+  
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  <!-- </view> -->
+</view>

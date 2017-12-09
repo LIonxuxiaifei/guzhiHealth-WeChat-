@@ -1,0 +1,43 @@
+<!--pages/userCenter/userCenter.wxml-->
+<view class='container'>
+  <view class='containerx'>
+    <view class='container1'>
+      <image src='/image/personalCenter/personalCenter.png'></image>
+    </view>
+    <view class='container2'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+      <text>{{userInfo.nickName}}</text>
+      <label bindtap='reTest'>重新检测</label>
+    </view>
+  </view>
+
+  <view class='containery'>
+    <view class='container3'>
+      <image class='image1' src='/image/personalCenter/testReport.png'></image>
+      <view class='container3x' bindtap='testReport'>
+        <text>评测报告</text>
+        <image class='image2' src='/image/personalCenter/right.png'></image>
+      </view>
+    </view>
+    <view class='container4' bindtap='weightRecording'>
+      <image class='image3' src='/image/personalCenter/time.png'></image>
+      <view>
+        <view class='container4x'>
+        <text>体重记录</text>
+        <image class='image4' src='/image/personalCenter/right.png'></image>
+        </view>
+      </view>
+      
+    </view>
+    <view class='container5' bindtap='myPersonal'>
+      <image class='image5' src='/image/personalCenter/cloud.png'></image>
+      <view>
+        <view class='container5x'>
+        <text>我的私人订制</text>
+        <image class='image6' src='/image/personalCenter/right.png'></image>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

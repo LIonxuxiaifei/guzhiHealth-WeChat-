@@ -1,0 +1,24 @@
+<!--pages/stepFourth/stepFourth.wxml-->
+<view class='container'>
+    <view class='container1'>
+    <text>您的身高？</text>
+    <picker bindchange="bindHeightChange" value="{{height_index}}" range="{{array}}">
+    <view class="picker">
+    <label>{{array[height_index]}}{{height1}}{{danwei1}}</label>
+    </view>
+  </picker>
+        
+    </view>
+    <view class='container2'>
+        <text>您的体重?</text>
+      <picker bindchange="bindWeightChange" value="{{index}}" range="{{array1}}">
+        <view class="picker">
+        <label>{{array1[weight_index]}}{{weight1}}{{danwei2}}</label>
+        </view>
+      </picker>
+    </view>
+
+    <view class='x-footer'>
+        <text bindtap='nextStep'>下一步</text>
+    </view>
+</view>

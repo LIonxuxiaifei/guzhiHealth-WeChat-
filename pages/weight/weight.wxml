@@ -1,0 +1,40 @@
+<!--pages/weight/weight.wxml-->
+<view class='container'>
+  <view class='containerx'>
+      <view class='container1'>
+        <text>目标体重</text>
+      </view>
+      <view class='container2'>
+        <text>{{array1[weight_index]}}{{weightDetail}}</text>
+        <label>千克</label>
+      </view> 
+      <view class='container3'>
+      <picker bindchange="bindWeightChange" value="{{index}}" range="{{array1}}">
+        <view class="picker">
+        <!-- <label>{{array1[weight_index]}}{{weight1}}KG</label> -->
+        <text>输入体重</text>
+        </view>
+      </picker>
+        
+      </view>
+  </view>    
+
+      <view class='containery'>
+          <view class='container4'>
+            <text class='containerText01'>当前体重</text>
+            <view class='container4Content'>
+            <text class='containerText02'>{{currentWeight}}</text>
+            <label>千克</label>
+            </view>
+          </view>
+
+          <view class='container5'>
+            <text class='containerText03'>理想体重</text>
+            <view class='container5Content'>
+            <text class='containerText04'>{{idealWeight}}</text>
+            <label>千克</label>
+            </view>
+          </view>
+
+      </view>
+</view>

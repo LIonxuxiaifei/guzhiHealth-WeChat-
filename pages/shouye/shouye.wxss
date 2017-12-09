@@ -1,0 +1,92 @@
+/* pages/shouye/shouye.wxss */
+.container{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 您的性别 */
+.yourGender{
+  color: #666;
+  display: block;
+  width: 80%;
+  height: 100rpx;
+  margin: 0 auto;
+  font-size: 34rpx;
+  text-align: center;
+}
+.xGender text{
+  display: inline-block;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 1px solid #a4db7c;
+  text-align: center;
+  line-height: 140rpx;
+  float: left;
+  margin-left: 20%;
+  margin-top: 15rpx;
+  font-size: 53.67rpx;
+  color: #5e5e5e;
+}
+.xGender label{
+  display: inline-block;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 1px solid #a4db7c;
+  text-align: center;
+  line-height: 140rpx;
+  /* background-color: #a4db7c; */
+  /* color: #fff; */
+  color: #5e5e5e;
+  font-size: 53.67rpx;
+  float: right;
+  margin-right: 20%;
+  margin-top: 15rpx;
+}
+/* 出生日期 */
+.xBirthDate text{
+  display: block;
+  width: 80%;
+  height: 100rpx;
+  /* border: 1px solid greenyellow; */
+  float: left;
+  margin-left: 10%;
+  margin-top: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #343434;
+  font-size: 34rpx;
+}
+.xBirthDate label{
+  display: block;
+  width: 80%;
+  height: 100rpx;
+  /* border: 1px solid greenyellow; */
+  float: left;
+  margin-left: 10%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 46rpx;
+  color: #595959;
+}
+
+/* 下一步 */
+.nextStep{
+  display: block;
+  width: 84%;
+  height: 100rpx;
+  background-color: #99d634;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 100rpx;
+  position: absolute;
+  font-size: 40rpx;
+  left: 8%;
+  bottom: 14.4%;
+}
+.nextStep text{
+  color: #fff;
+  display: block;
+}

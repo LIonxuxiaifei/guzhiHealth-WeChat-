@@ -1,0 +1,163 @@
+<!--pages/weightRecording/weightRecording.wxml-->
+<view class='container'>
+  <view class='containery'>
+
+    <view class='container1'>
+
+      <view class='containerz1'>
+      <text>目标体重</text>
+      </view>
+      <view class='containerz2'>
+      <text>蛋白质</text>
+      </view>
+      <view class='containerz3'>
+      <text>碳水化合物</text>
+      </view>
+      <view class='containerz4'>
+      <text>脂肪</text>
+      </view>
+      <view class='containerz5'>
+      <text>总热量</text>
+      </view>  
+    </view>
+
+
+    <view class='container2' wx:for="{{detail}}">
+        <view class='containerx1'>
+          <text>{{detail[index].date}}</text>
+           <label>{{detail[index].target_weight}}KG</label> 
+        </view>
+        <view class='containerx2'>
+          <text>{{detail[index].protein}}g</text>
+        </view>
+        <view class='container3'>
+          <text>{{detail[index].carbohydrate}}g</text>
+        </view>
+        <view class='container4'>
+          <text>{{detail[index].fat}}g</text>
+        </view>
+        <view class='container5'>
+          <text>{{detail[index].calorie}}kcal</text>
+        </view>
+    </view>
+
+
+
+    <!-- <view class='container2'>
+        <view class='containerx1'>
+          <text>9月28日</text>
+           <label>55KG</label> 
+        </view>
+        <view class='containerx2'>
+          <text>50g</text>
+        </view>
+        <view class='container3'>
+          <text>1000g</text>
+        </view>
+        <view class='container4'>
+          <text>50g</text>
+        </view>
+        <view class='container5'>
+          <text>1200kcal</text>
+        </view>
+    </view>
+
+
+    <view class='container2'>
+        <view class='containerx1'>
+          <text>9月28日</text>
+           <label>55KG</label> 
+        </view>
+        <view class='containerx2'>
+          <text>50g</text>
+        </view>
+        <view class='container3'>
+          <text>1000g</text>
+        </view>
+        <view class='container4'>
+          <text>50g</text>
+        </view>
+        <view class='container5'>
+          <text>1200kcal</text>
+        </view>
+    </view>
+
+    <view class='container2'>
+        <view class='containerx1'>
+          <text>9月28日</text>
+           <label>55KG</label> 
+        </view>
+        <view class='containerx2'>
+          <text>50g</text>
+        </view>
+        <view class='container3'>
+          <text>1000g</text>
+        </view>
+        <view class='container4'>
+          <text>50g</text>
+        </view>
+        <view class='container5'>
+          <text>1200kcal</text>
+        </view>
+    </view>
+
+    <view class='container2'>
+        <view class='containerx1'>
+          <text>9月28日</text>
+           <label>55KG</label> 
+        </view>
+        <view class='containerx2'>
+          <text>50g</text>
+        </view>
+        <view class='container3'>
+          <text>1000g</text>
+        </view>
+        <view class='container4'>
+          <text>50g</text>
+        </view>
+        <view class='container5'>
+          <text>1200kcal</text>
+        </view>
+    </view>
+
+    <view class='container2'>
+        <view class='containerx1'>
+          <text>9月28日</text>
+           <label>55KG</label> 
+        </view>
+        <view class='containerx2'>
+          <text>50g</text>
+        </view>
+        <view class='container3'>
+          <text>1000g</text>
+        </view>
+        <view class='container4'>
+          <text>50g</text>
+        </view>
+        <view class='container5'>
+          <text>1200kcal</text>
+        </view>
+    </view>
+
+    <view class='container2'>
+        <view class='containerx1'>
+          <text>9月28日</text>
+           <label>55KG</label> 
+        </view>
+        <view class='containerx2'>
+          <text>50g</text>
+        </view>
+        <view class='container3'>
+          <text>1000g</text>
+        </view>
+        <view class='container4'>
+          <text>50g</text>
+        </view>
+        <view class='container5'>
+          <text>1200kcal</text>
+        </view>
+    </view> -->
+    </view>
+
+    
+</view>

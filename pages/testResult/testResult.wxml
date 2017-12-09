@@ -1,0 +1,69 @@
+<!--pages/testResult/testResult.wxml-->
+<view class='container'>
+<view class='xcontainer'>
+ <view class='containera'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+    <view class='container1'>
+ 
+      <text>{{people}}</text>
+    </view>
+
+    <view class='containerx'>
+        <view class='containerx1'>
+          <text>当前体重</text>
+          <label>{{currentWeight}}kg</label>
+        </view>
+        <view class='containerx2'>
+          <text>BMI指数</text>
+          <image src='{{canshu}}'></image>
+          <label>{{currentBMI}}</label>
+        </view>
+        <view class='containerx3'>
+          <text>体脂率</text>
+          <image src='{{zhishu}}'></image>
+          <label>{{currentBfr}}%</label>
+        </view>
+        <view class='containerx4'>
+          <text>理想体重</text>
+          <label>{{currentIdeal_weight}}kg</label>
+        </view>
+    </view>
+    </view>
+
+<view class='ycontainer'>
+    <view class='container2'>
+      <text>目标体重</text>
+      <label>{{targetWeight}}kg</label>
+    </view>
+
+    <view class='containery'>
+        <view class='containery1'>
+          <text>蛋白质</text>
+          <label>{{protein}}g</label>
+        </view>
+        <view class='containery2'>
+          <text>脂肪</text>
+          <label>{{fat}}g</label>
+        </view>
+        <view class='containery3'>
+          <text>碳水化合物</text>
+          <label>{{carbohydrate}}g</label>
+        </view>
+        <view class='containery4'>
+          <text>每天所需总热量</text>
+          <label>{{heat}}kcal</label>
+        </view>
+    </view>
+</view>    
+
+    <view class='container3'>
+      <text>建议您定制食谱, 获得完美体形</text>
+    </view>
+
+    <view class='x-footer'>
+        <text bindtap='reTest'>重新检测</text>
+         <label bindtap='toMainPage'>进入首页</label> 
+    </view>
+
+</view>

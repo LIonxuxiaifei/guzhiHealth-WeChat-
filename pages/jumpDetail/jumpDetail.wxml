@@ -1,0 +1,174 @@
+<!--pages/mainPage/mainPage.wxml-->
+
+   
+ <scroll-view  scroll-y  style='height:{{scrollHeight}}%'  bindscroll="scroll"  scroll-top="{{scrollTop.scroll_top}}" bindscroll="scrollTopFun"> 
+<view class='container'>
+    <view class='containerz' bindtap="showitem">
+        <label>{{biaoqian}}</label>
+        <image src='{{biaoqianImg}}'></image>
+    <block wx:for="{{tagName}}" wx:key="{{tagName.userId}}">
+    <!-- <text class='down1Detail1'>#{{tagName[index]}}</text> -->
+    <text class='down1Detail1'>{{ret[index]}}</text>
+  </block>  
+  <image src='{{biaoqianImg2}}'></image> 
+    </view>
+
+<view class="{{down?'show':'hide'}}"> 
+  <view class='down1'>
+  <!-- <block wx:for="{{tagName}}" wx:key="{{tagName.userId}}"> -->
+    <!-- <text class='down1Detail1'>#{{tagName[index]}}</text> -->
+    <!-- <text class='down1Detail2'>#{{tagname2}}</text>
+    <text class='down1Detail3'>#{{tagname3}}</text> -->
+  <!-- </block>    -->
+  
+    <!-- <image src='../../image/mainPage/down.png'></image> -->
+  </view>
+  <view class='down2'>
+    <text>口味</text>
+  </view>
+  <view class='down3'>
+    <!-- <label bindtap='chooseFood' class="{{down3Detail1?'down3Detail1Change1':'down3Detail1Change'}}">{{taste[0].name}}</label>
+    <text  bindtap='chooseFood1' class="{{down3Detail2?'down3Detail1Change':'down3Detail1Change1'}}">西餐</text> -->
+<!-- <text class='tasteFull'>全部</text> -->
+
+ <block wx:for="{{taste}}" wx:key="{{taste.userId}}">
+ <text bindtap='chooseFood' class="{{CellId1==index?'down3Detail1Change': 'down3Detail1Change1'}}"  data-key="{{taste[index].id}}" data-name='{{taste[index].name}}' data-taste="{{index}}">{{taste[index].name}}</text>
+</block> 
+
+<!-- <block wx:for="{{taste}}" wx:key="{{taste.userId}}">
+ <text bindtap='chooseFood' class="{{tasteDetail}}"  data-key="{{taste[index].id}}" data-name='{{taste[index].name}}' data-taste="{{index}}">{{taste[index].name}}</text>
+</block> -->
+
+  </view>
+  
+  <view class='down4'>
+    <text>难度</text>
+  </view>
+  <view class='down5'>
+    <!-- <label bindtap='chooseColor' class="{{down5Detail1?'changeColor':'changeColor1'}}">{{difficulty[1]}}</label>
+    <text bindtap='chooseColor1' class="{{down5Detail2?'changeColor':'changeColor1'}}">{{difficulty[2]}}</text>
+    <text bindtap='chooseColor2' class="{{down5Detail3?'changeColor':'changeColor1'}}">{{difficulty[3]}}</text>    -->
+
+<block wx:for="{{difficulty}}" wx:key="{{difficulty.userId}}">
+ <text bindtap='chooseColor' class="{{CellId==index?'changeColor':'changeColor1'}}" data-index="{{index}}">{{difficulty[index]}}</text>
+</block> 
+  </view>
+
+  <view class='down6'>
+    <text>标签</text>
+  </view>
+  <view class='down7'>
+ <!-- <label bindtap='change' class="{{down7Detail1?'change':'change1'}}">{{tag[0].name}}</label>
+<text bindtap='change1' class="{{down7Detail2?'change':'change1'}}">大豆类</text>
+<text bindtap='change2' class="{{down7Detail3?'change':'change1'}}">鱼虾类</text>
+<text bindtap='change3' class="{{down7Detail4?'change':'change1'}}">蛋类</text>    -->
+
+ <block wx:for="{{tag}}" wx:key="{{tag.userId}}">
+ <text bindtap='change1' class="{{indexArr==index?'changeColor':'changeColor1'}}" data-key="{{index}}" data-name='{{tag[index].name}}' data-tag='{{tag[index].id}}'>{{tag[index].name}}</text>
+</block>       
+  </view>
+
+  <view class='close'>
+    <text bindtap='close'>确定</text>
+  </view>
+
+</view>
+
+
+
+
+
+ <!-- <swiper>  -->
+   <!-- <swiper-item>   -->
+    <view class='container1'>
+    <block wx:for="{{inforDetail}}"  >
+      <view class='container2' data-change="{{index}}" >
+        <image class='containerImg01' src='https://gz-xcx.maoln.com/{{inforDetail[index].thumbnail}}' bindtap='foodDetail' data-change="{{index}}" data-id="{{inforDetail[index].id}}"></image>
+        <view class='container2Detail'>
+          <text>{{inforDetail[index].title}}</text>
+          <image bindtap='addNum' data-addnum="{{index}}" class='containerImg03' src='../../image/mainPage/add1.png'></image>
+          <label>{{inforDetail[index].count}}</label>
+          <image bindtap='minusNum' data-minusnum='{{index}}' class='containerImg02' src='../../image/mainPage/minus1.png'></image>
+        </view>
+        <view class='container2Footer'>
+          <text>{{inforDetail[index].min}}{{inforDetail[index].unit}}</text>
+          <label bindtap='addFood' data-add='{{index}}' data-id='{{inforDetail[index].id}}'>添加</label>
+        </view>
+      </view>
+    </block> 
+       
+
+      <!-- <view class='container3'>
+        <image class='containerImg01' src='../../image/mainPage/realFood.png'></image>
+        <view class='container2Detail'>
+          <text>杂粮饼干</text>
+          <image class='containerImg03' src='../../image/mainPage/add1.png'></image>
+          <label>1</label>
+          <image class='containerImg02' src='../../image/mainPage/minus1.png'></image>
+        </view>
+        <view class='container2Footer'>
+          <text>100克</text>
+          <label>添加该食谱</label>
+        </view>
+      </view> -->
+     </view> 
+      
+     <!-- </swiper-item> -->
+    <!-- </swiper> -->
+ 
+
+        <view class='container1'>
+
+      <!-- <view class='container2'>
+        <image class='containerImg01' src='../../image/mainPage/realFood.png'></image>
+        <view class='container2Detail'>
+          <text>杂粮饼干</text>
+          <image class='containerImg03' src='../../image/mainPage/add1.png'></image>
+          <label>1</label>
+          <image class='containerImg02' src='../../image/mainPage/minus1.png'></image>
+        </view>
+        <view class='container2Footer'>
+          <text>100克</text>
+          <label>添加该食谱</label>
+        </view>
+      </view> -->
+
+      <!-- <view class='container3'>
+        <image class='containerImg01' src='../../image/mainPage/realFood.png'></image>
+        <view class='container2Detail'>
+          <text>杂粮饼干</text>
+          <image class='containerImg03' src='../../image/mainPage/add1.png'></image>
+          <label>1</label>
+          <image class='containerImg02' src='../../image/mainPage/minus1.png'></image>
+        </view>
+        <view class='container2Footer'>
+          <text>100克</text>
+          <label>添加该食谱</label>
+        </view>
+      </view> -->
+
+    </view>
+
+ 
+
+</view>
+
+  </scroll-view> 
+<!-- 返回顶部 -->
+<!-- <view class='backTop' bindtap='backToTop'>
+    <image src='../../image/zhishu/backToTop.png'></image>
+</view> -->
+
+<!-- <view style="position: absolute; bottom: 50rpx; right: 30rpx; width: 120rpx; height: 120rpx; border: solid 1px green;" wx:if="{{scrollTop.goTop_show}}" catchtap="goTopFun"></view>  -->
+
+<view >
+<image  class='backTop' wx:if="{{scrollTop.goTop_show}}" catchtap="goTopFun" src='../../image/zhishu/backToTop.png'></image>
+</view> 
+
+
+
+
+
+
+
+

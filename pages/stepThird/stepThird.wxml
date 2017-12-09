@@ -1,0 +1,25 @@
+<!--pages/stepThird/stepThird.wxml-->
+<view class='container'>
+    <view class='container1'>
+      <text>您平时的劳动强度？</text>
+    </view>
+
+    <view style='{{style1}}' class='container2' bindtap='changeColor'>
+      <text style='{{style1x}}'>轻体力劳动</text>
+      <label style='{{style1y}}'>(每日久坐时间较久, 如办公室职员、学生等)</label>
+    </view>
+
+    <view style='{{style2}}' class='container3' bindtap='changeColor1'>
+      <text style='{{style2x}}'>中体力劳动</text>
+      <label style='{{style2y}}'>(每日站立时间长，如售货员、教师等)</label>
+    </view>
+
+    <view style='{{style3}}' class='container4' bindtap='changeColor2'>
+      <text style='{{style3x}}'>重体力劳动</text>
+      <label style='{{style3y}}'>(每日从事体力活动，如快递员、 搬运工等)</label>
+    </view>
+
+     <view class='x-footer'>
+        <text bindtap='nextStep'>下一步</text>
+     </view>
+</view>

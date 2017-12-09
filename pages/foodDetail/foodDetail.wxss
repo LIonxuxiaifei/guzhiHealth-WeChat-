@@ -1,0 +1,230 @@
+/* pages/foodDetail/foodDetail.wxss */
+ @import "../../wxParser/wxParse.wxss"; 
+.container{
+  display: block;
+  width: 100%;
+   margin-top: -180rpx; 
+}
+.container1{
+  display: block;
+  width: 100%;
+  height: 482rpx;
+}
+.container1 image{
+  display: block;
+  width: 100%;
+    height: 100%;  
+}
+/* 芒果红豆白雪 */
+.container2{
+  display: block;
+  width: 100%;
+  height: 288rpx;
+  position: relative;
+}
+.container2 text{
+  display: inline-block;
+  font-size: 44rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+  float: left;
+  margin-top: 60rpx;
+  margin-left: 35rpx;
+}
+.container2 .containerY .image1{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 130rpx;
+  left: 34rpx;
+}
+.container2 .containerY .image2{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 130rpx;
+  left: 104rpx;
+}
+.container2 .containerY .image3{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 130rpx;
+  left: 174rpx;
+}
+.containerx{ 
+  position: relative;
+  display: inline-block;
+  width: 196rpx;
+  height: 70rpx; 
+  border: 1px solid #b0df61;
+  /* background-color: #b0df61;   */
+  margin-top: 58rpx; 
+  margin-right: 32rpx; 
+  border-radius: 25px;
+  float: right;
+  line-height: 70rpx;
+} 
+.containerx label{
+  position: absolute;
+  left: 75rpx;
+  font-size: 32rpx;
+  color: #222222;
+  font-family: Microsoft YaHei UI;
+}
+.containerx image{
+  display: inline-block;
+  width: 27rpx;
+  height: 27rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 45rpx;
+}
+.container3{
+  display: inline-block;
+  width: 90%;
+  height: 270rpx;
+  margin-left: 5%;
+}
+.container3 text{
+  font-size: 34rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+}
+/* 三大营养素及热量 */
+.container4{
+  display: inline-block;
+  height: 125rpx;
+  width: 91%;
+  margin-left: 4.5%;
+  position: relative;
+}
+.container4 .container4Y{
+  font-size: 38rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+  margin-left: 27rpx;
+}
+.container4 label{
+  font-size: 30rpx;
+  color: #999;
+  margin-left: 25rpx;
+}
+.container4 .container4X{
+  display: inline-block;
+  width: 9rpx;
+  height: 38rpx;
+  background-color: #99d634;
+  position: absolute;
+  border-radius: 25px;
+  float: left;
+  margin-top: 8rpx;
+}
+.container5,.container6,.container7,.container8,.container10,.container11,.container12,.container13{
+  display: inline-block;
+  height: 96rpx;
+  width: 91%;
+  margin-left: 4.5%;
+}
+.container8{
+  height: 155rpx;
+}
+.container13{
+  height: 91rpx;
+  border-bottom: 1px solid #c5c5c5;
+}
+.container5 text,.container6 text,.container7 text,.container8 text,.container10 text,.container11 text,.container12 text,.container13 text{
+  font-size: 32rpx;
+  color: #666;
+  float: left;
+}
+.container5 label,.container6 label,.container7 label,.container8 label,.container10 label,.container label,.container12 label,.container13 label{
+  font-size: 32rpx;
+  color: #666;
+  float: right;
+}
+/* 食材详情 */
+.container9{
+  display: inline-block;
+  height: 125rpx;
+  width: 91%;
+  margin-left: 4.5%;
+  position: relative;
+}
+.container9 .containerX{
+  display: inline-block;
+  width: 9rpx;
+  height: 38rpx;
+  background-color: #99d634;
+  position: absolute;
+  border-radius: 25px;
+  float: left;
+  margin-top: 8rpx;
+  /* text-align: center; */
+}
+.container9 .containerY{
+  font-size: 38rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+  margin-left: 27rpx;
+}
+/* 烹饪步骤 */
+.container14{
+  display:block;
+  height: 169rpx;
+  width: 91%;
+  margin-left: 4.5%;
+  position: relative;
+}
+.container14 .containerX{
+  display: inline-block;
+  width: 9rpx;
+  height: 38rpx;
+  background-color: #99d634;
+  position: absolute;
+  border-radius: 25px;
+  float: left;
+  /* margin-top: 8rpx; */
+  margin-top: 59rpx;
+}
+.container14 .containerY{
+  font-size: 38rpx;
+  color: #343434;
+  font-family: Microsoft YaHei UI;
+  margin-left: 27rpx;
+  margin-top: 59rpx;
+  float: left;
+}
+.container15{
+  display: block;
+  width: 91%;
+  height: 162rpx;
+  margin-left: 4.5%;
+}
+.container15 text{
+  margin-left: 33rpx;
+}
+.container16{
+  display:block;
+  height: 709rpx;
+  width: 91%;
+  margin-left: 4.5%;
+  position: relative;
+}
+.container16 image{
+  display: block;
+  width: 681rpx;
+  height: 440rpx;
+}
+.container16 text{
+  display: block;
+  height: 270rpx;
+  width: 100%;
+  font-size: 32rpx;
+  color: #666;
+  margin-top: 65rpx;
+  line-height: 70rpx;
+}
